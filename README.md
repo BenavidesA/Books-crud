@@ -1,48 +1,48 @@
-# Sistema de Gestión de Biblioteca
+# Library Management System
 
-Este es un programa en C para gestionar una pequeña biblioteca. Permite registrar libros, mostrar los libros registrados, buscar un libro por su ID o título, cambiar el estado de un libro (de "Disponible" a "Prestado" o viceversa) y eliminar un libro de la lista.
+This is a C program to manage a small library. It allows you to register books, display registered books, search for a book by its ID or title, change the status of a book (from "Available" to "Checked out" or vice versa), and delete a book from the list.
 
-## Funcionalidades
+## Features
 
-### 1. **Registrar Libro**
-   Permite ingresar los datos de un libro, incluyendo su ID, título, autor, año de publicación y estado (inicialmente se configura como "Disponible"). Se validan entradas para asegurarse de que no se ingresen más de 20 libros ni IDs duplicados.
+### 1. **Register Book**
+   Allows entering the data of a book, including its ID, title, author, publication year, and status (initially set as "Available"). It validates input to ensure that no more than 20 books are entered and that IDs are not duplicated.
 
-### 2. **Mostrar Libros**
-   Muestra todos los libros registrados, incluyendo su ID, título, autor, año y estado. Solo se muestran los libros que han sido correctamente registrados.
+### 2. **Display Books**
+   Displays all registered books, including their ID, title, author, year, and status. Only books that have been successfully registered are shown.
 
-### 3. **Buscar Libro por ID**
-   Permite buscar un libro por su ID y muestra los detalles del libro encontrado, incluyendo su título, autor, año de publicación y estado.
+### 3. **Search Book by ID**
+   Allows searching for a book by its ID and displays the details of the found book, including its title, author, publication year, and status.
 
-### 4. **Buscar Libro por Título**
-   Permite buscar un libro por su título y muestra los detalles del libro encontrado.
+### 4. **Search Book by Title**
+   Allows searching for a book by its title and displays the details of the found book.
 
-### 5. **Cambiar Estado de un Libro**
-   Cambia el estado de un libro entre "Disponible" y "Prestado". Esto es útil para llevar un registro de los libros que han sido prestados.
+### 5. **Change Book Status**
+   Changes the status of a book between "Available" and "Checked out." This is useful for keeping track of books that have been borrowed.
 
-### 6. **Eliminar un Libro**
-   Permite eliminar un libro de la lista de libros registrados. El libro se elimina buscando por su título y desplazando los elementos restantes para llenar el espacio vacío.
+### 6. **Delete a Book**
+   Allows deleting a book from the list of registered books. The book is removed by searching for its title and shifting the remaining elements to fill the empty space.
 
-### 7. **Salir**
-   Finaliza la ejecución del programa.
+### 7. **Exit**
+   Ends the program execution.
 
-## Estructura de Datos
+## Data Structure
 
-El programa maneja una estructura llamada `Libro` que contiene los siguientes campos:
+The program uses a structure called `Book` with the following fields:
 
-- **ID**: Un identificador único para cada libro (entero).
-- **Título**: El título del libro (cadena de texto).
-- **Autor**: El autor del libro (cadena de texto).
-- **Año**: El año de publicación del libro (entero).
-- **Estado**: El estado del libro, que puede ser "Disponible" o "Prestado" (cadena de texto).
+- **ID**: A unique identifier for each book (integer).
+- **Title**: The title of the book (string).
+- **Author**: The author of the book (string).
+- **Year**: The year of publication of the book (integer).
+- **Status**: The status of the book, which can be "Available" or "Checked out" (string).
 
-## Requisitos
+## Requirements
 
-Este programa está escrito en C y utiliza las siguientes librerías estándar:
+This program is written in C and uses the following standard libraries:
 
 - `stdio.h`
 - `string.h`
 
-## Limitaciones
-El programa está limitado a un máximo de 20 libros.
-Solo se permiten IDs únicos para cada libro, y el programa valida la entrada para evitar duplicados.
+## Limitations
+The program is limited to a maximum of 20 books.
+Only unique IDs are allowed for each book, and the program validates the input to prevent duplicates.
 
